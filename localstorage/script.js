@@ -41,10 +41,10 @@ function tampil() {
     hasil.forEach(element => {
         document.getElementById("list-belanja").innerHTML += `<div class="col-lg-4 col-md-6 col-sm-">`;
          <div class="card">
+            <img src="${element.keterangan}" alt="Daftar Belanja" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;"></img>
             <div class="card-body">
                 <h4 class="card-title">${element.nama}</h4>
                 <h6 class="card-subtitle mb-2 text-muted">Rp. ${element.harga}</h6>
-                <p class="card-text">${element.keterangan}</p>
             </div>
         </div>
     </div>`;
