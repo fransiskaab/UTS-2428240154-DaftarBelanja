@@ -39,6 +39,15 @@ function tampil() {
     document.getElementById("list-belanja").innerHTML = "";
 
     hasil.forEach(element => {
-        document.getElementById("list-belanja").innerHTML += `
+        document.getElementById("list-belanja").innerHTML += `<div class="col-lg-4 col-md-6 col-sm-">`;
          <div class="card">
-         <img src="$>
+            <div class="card-body">
+                <h4 class="card-title">${element.nama}</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Rp. ${element.harga}</h6>
+                <p class="card-text">${element.keterangan}</p>
+            </div>
+        </div>
+    </div>`;
+    });
+}
+tampil()
